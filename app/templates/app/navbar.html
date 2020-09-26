@@ -1,0 +1,25 @@
+{% load static %}
+
+{% block content %}
+
+<header class="main-header">
+
+  <nav class="transparent">
+    <div class="nav-wrapper z-depth-0">
+
+      <a href="{% url 'index.html' %}" class="brand-logo">Galappear</a>
+      <a
+        href=""
+        data-target="slide-out"
+        data-activates="mobile-demo"
+        class="button-collapse show-on-large sidenav-trigger"
+      >
+        <i class="material-icons">menu</i>
+      </a>
+
+    </div>
+  </nav>
+
+</header>
+
+{% endblock %}
