@@ -1,25 +1,38 @@
 {% load static %}
-
 {% block content %}
 
 <header class="main-header">
-
-  <nav class="transparent">
-    <div class="nav-wrapper z-depth-0">
-
-      <a href="{% url 'index.html' %}" class="brand-logo">Galappear</a>
+  <nav class="transparent z-depth-0">
+    <div class="nav-wrapper">
       <a
-        href=""
+        href="#"
         data-target="slide-out"
         data-activates="mobile-demo"
         class="button-collapse show-on-large sidenav-trigger"
       >
         <i class="material-icons">menu</i>
       </a>
-
+      <a href="#home" class="brand-logo">Cari's Site</a>
+      <ul class="right hide-on-med-and-down">
+        <li class="active"><a href="{% url 'app:index' %}">Abstract</a></li>
+        <li><a href="{% url 'app:logos' %}">Logos</a></li>
+        <li><a href="{% url 'app:gaming' %}">Gaming</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
     </div>
+    <!-- SideNav -->
+    <ul id="slide-out" class="sidenav grey darken-4">
+      <h4></h4>
+        <li><a class="grey-text text-lighten-5" href="{% url 'app:index' %}">Abstract</a></li>
+        <li><a class="grey-text text-lighten-5" href="{% url 'app:logos' %}">Logos</a></li>
+        <li><a class="grey-text text-lighten-5" href="{% url 'app:gaming' %}">Gaming</a></li>
+        <li><a class="grey-text text-lighten-5" href="#portfolio">Portfolio</a></li>
+        <li><a class="grey-text text-lighten-5" href="#contact">Contact</a></li>
+    </ul>
   </nav>
-
+  <h1 class="center">I build Apps and do <span class="red-text text-accent-3">Graphic Design</span></h1>
+  <h4 class="center">Caricia Briones</h4>
 </header>
 
 {% endblock %}

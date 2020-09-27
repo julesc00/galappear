@@ -1,0 +1,195 @@
+{% extends 'app/base.html' %}
+{% load static %}
+
+{% block content %}
+
+    {% include 'app/navbar.html' %}
+
+    <section class="section section main">
+        <div class="container">
+            <!-- Row 1 -->
+            <div class="row row-1">
+                <div class="col m6 hide-on-small-only">
+                    <div class="img-content">
+                        <h3>Clossyp</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci alias animi autem
+                            consectetur ducimus, nulla quidem ratione recusandae rerum ut.
+                        </p>
+                    </div>
+                </div>
+                <div class="col m6">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="{% static 'images/gallery/gaming1.jpg' %}" alt="">
+                            <span class="card-title">
+                                Clossyp
+                            </span>
+                            <a
+                                    href="#gaming1"
+                                    class="btn-floating halfway-fab waves-effect waves-light red modal-trigger">
+                                <i class="material-icons">add</i>
+                            </a>
+                        </div>
+                        <div class="card-content">
+                            <p>
+                                <i class="material-icons">star</i>
+                                <i class="material-icons">star</i>
+                                <i class="material-icons">star</i>
+                                <i class="material-icons">star</i>
+                                <i class="material-icons">star</i>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Row 2 -->
+            <div class="row row-2">
+                <div class="col m6">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="{% static 'images/gallery/gaming2.jpg' %}" alt="">
+                            <span class="card-title">
+                                Voyflen
+                            </span>
+                            <a
+                                    href="#gaming2"
+                                    class="btn-floating halfway-fab waves-effect waves-light red modal-trigger">
+                                <i class="material-icons">add</i>
+                            </a>
+                        </div>
+                        <div class="card-content">
+                            <p>
+                                <i class="material-icons">star</i>
+                                <i class="material-icons">star</i>
+                                <i class="material-icons">star</i>
+                                <i class="material-icons">star_half</i>
+                                <i class="material-icons">star_outline</i>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col m6 hide-on-small-only">
+                    <div class="img-content">
+                        <h3>Voyflen</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci alias animi autem
+                            consectetur ducimus, nulla quidem ratione recusandae rerum ut.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- Row 3 -->
+            <div class="row row-3">
+                <div class="col m6 hide-on-small-only">
+                    <div class="img-content">
+                        <h3>Rendann</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci alias animi autem
+                            consectetur ducimus, nulla quidem ratione recusandae rerum ut.
+                        </p>
+                    </div>
+                </div>
+                <div class="col m6">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="{% static 'images/gallery/gaming3.jpg' %}" alt="">
+                            <span class="card-title">
+                                Rendann
+                            </span>
+                            <a href="#gaming3"
+                               class="btn-floating halfway-fab waves-effect waves-light red modal-trigger">
+                                <i class="material-icons">add</i>
+                            </a>
+                        </div>
+                        <div class="card-content">
+                            <p>
+                                <i class="material-icons">star</i>
+                                <i class="material-icons">star_half</i>
+                                <i class="material-icons">star_outline</i>
+                                <i class="material-icons">star_outline</i>
+                                <i class="material-icons">star_outline</i>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal 1 -->
+    <div id="gaming1" class="modal">
+        <div class="modal-content">
+            <h4>Clossyp</h4>
+            <img
+                    src="{% static 'images/gallery/gaming1.jpg' %}"
+                    alt=""
+                    class="responsive-img">
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae commodi consequatur cupiditate ducimus
+                error
+                excepturi explicabo porro recusandae voluptas voluptates.
+            </p>
+        </div>
+        <div class="modal-footer">
+            <p>
+                <i class="material-icons">star</i>
+                <i class="material-icons">star</i>
+                <i class="material-icons">star</i>
+                <i class="material-icons">star</i>
+                <i class="material-icons">star</i>
+            </p>
+        </div>
+    </div>
+    <!-- Modal 2 -->
+    <div id="gaming2" class="modal">
+        <div class="modal-content">
+            <h4>Voyflen</h4>
+            <img
+                    src="{% static 'images/gallery/gaming2.jpg' %}"
+                    alt=""
+                    class="responsive-img">
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae commodi consequatur cupiditate ducimus
+                error
+                excepturi explicabo porro recusandae voluptas voluptates.
+            </p>
+        </div>
+        <div class="modal-footer">
+            <p>
+                <i class="material-icons">star</i>
+                <i class="material-icons">star</i>
+                <i class="material-icons">star</i>
+                <i class="material-icons">star_half</i>
+                <i class="material-icons">star_outline</i>
+            </p>
+        </div>
+    </div>
+    <!-- Modal 3 -->
+    <div id="gaming3" class="modal">
+        <div class="modal-content">
+            <h4>Rendann</h4>
+            <img
+                    src="{% static 'images/gallery/gaming3.jpg' %}"
+                    alt=""
+                    class="responsive-img">
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae commodi consequatur cupiditate ducimus
+                error
+                excepturi explicabo porro recusandae voluptas voluptates.
+            </p>
+        </div>
+        <div class="modal-footer">
+            <p>
+                <i class="material-icons">star</i>
+                <i class="material-icons">star_half</i>
+                <i class="material-icons">star_outline</i>
+                <i class="material-icons">star_outline</i>
+                <i class="material-icons">star_outline</i>
+            </p>
+        </div>
+    </div>
+
+    {% include 'app/footer.html' %}
+
+{% endblock %}
